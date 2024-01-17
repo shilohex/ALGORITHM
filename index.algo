@@ -12,7 +12,7 @@ ALGORITHM calc
 
  BEGIN
    
-    Read(N)//"life is short live it or dont."
+    Read(N)= //"life is short live it or dont."
     WHILE (N(T) <>".") DO   // Loop until a period is encountered at the end of the string
      SWITCH (N(T)) DO
         case " " : words:words +1  // Increment word count when a space is encountered 
