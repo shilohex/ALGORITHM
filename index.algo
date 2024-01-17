@@ -1,0 +1,40 @@
+ALGORITHM calc
+
+
+
+VAR
+   N:STRING
+   T:INTEGER:0
+   words:INTEGER:0
+   vowels:INTEGER:0
+   totalchar:INTEGER:0
+
+
+BEGIN
+// the while signifies the amount of char present
+   
+    Read(N)//"life is short live it or dont."
+    WHILE (N(T) <>".") DO
+    //   the switch do represnts counting the amount of vowles and words in the stament above  
+     SWITCH (N(T)) DO
+        case " " : words:words +1 break;
+        case "a" : vowels:vowels +1
+        case "e" : vowels:vowels +1
+        case "i" : vowels:vowels+1
+        case "o" : vowels:vowels +1
+        case "u" : vowels:vowels +1
+    END_SWITCH
+// T is added by one to complete char
+    T:=T+1
+    END_WHILE
+    totalchar:T + 1
+
+    Write(words)
+    Write(vowels)
+    Write(totalchar)
+END
+    
+     
+
+
+
